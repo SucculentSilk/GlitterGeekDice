@@ -25,6 +25,13 @@ header {
 
 .menuItem {
     margin: 0px 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.menuItem:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .menuMisc {
@@ -40,6 +47,17 @@ header {
     height: 40px;
 }
 
+.menuButton:hover {
+    background: #FCB4E0;
+}
+
+.menuButton:active {
+    background: #AF7B9B;
+    -webkit-box-shadow: inset 1px 1px 10px #333;
+    -moz-box-shadow:    inset 1px 1px 10px #333;
+    box-shadow:         inset 1px 1px 10px #333;
+}
+
 .button {
     border-radius: 10px;
     background-image: linear-gradient(#de9cc4, #e5bda6);
@@ -52,6 +70,178 @@ header {
     text-align: center;
     align-items: center;
 }
+
+.heroButton:hover {
+    background: #FCB4E0;
+    border-color: black;
+}
+
+.heroButton:active {
+    background: #AF7B9B;
+    -webkit-box-shadow: inset 1px 1px 10px #333;
+    -moz-box-shadow:    inset 1px 1px 10px #333;
+    box-shadow:         inset 1px 1px 10px #333;
+}
+
+/* SUBMENU */
+
+.subBanner {
+    background-image: url("/GlitterGeekDice/images/BlueDice\ Banner.png");
+}
+
+.subBanner {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleSearch {
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+  /* Use this callout for breadcrumb */
+  /* Style the "active" element to highlight the current page */
+  .subBanner a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .subBanner input[type=text] {
+   float: right;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  .subTitle {
+      float: left;
+      margin-left: 100px;
+      margin-top: 30px;
+      margin-bottom: 25px;
+  }
+
+
+  .searchBar {
+      margin-top: 25px;
+  }
+
+  /* add search icon back into HTML */
+  .titleSearch .searchContainer button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+/* Custom Dice Page */
+
+.textForm {
+    display: flex;
+    flex-direction: row;
+    margin: 200px;
+}
+
+.customText {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "customHeader"
+    "customDescription";
+}
+
+.customHeader {
+    grid-area: customHeader;
+}
+
+.customDescription {
+    grid-area: customDescription;
+}
+
+
+#nameBox {
+    border-radius: 10px;
+    border-width: 1px;
+    color: #7A7A7A;
+    width: 400px;
+    padding-left: 10px;
+}
+
+#emailBox {
+    width: 400px;
+    border-width: 1px;
+    border-radius: 10px;
+    color: #7A7A7A;
+    padding-left: 10px;
+}
+
+#messageBox {
+    width: 400px;
+    height: 200px;
+    color: #7A7A7A;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-left: 10px;
+}
+
+.btn-primary {
+    border-radius: 10px;
+    background-image: linear-gradient(#de9cc4, #e5bda6);
+    font-size: 26px;
+    font-family: "Jost", sans-serif;
+    border-color: black;
+    border-width: 3px;
+    width: 200px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+}
+
+/* not sure how to get rid of original blue */
+.btn-primary:hover {
+    background: #FCB4E0;
+    border-color: black;
+}
+
+/* not sure how to remove outer blue glow */
+.btn-primary:active {
+    background: #AF7B9B;
+    -webkit-box-shadow: inset 1px 1px 10px #333;
+    -moz-box-shadow:    inset 1px 1px 10px #333;
+    box-shadow:         inset 1px 1px 10px #333;
+}
+
+/* MODAL */
+
+.modal-content {
+    width: 600px;
+    height: 492px;
+    left: 45px;
+    top: 112px;
+    background: #FFFFFF;
+    border: 2px solid #DE9CC4;
+    box-sizing: border-box;
+}
+
+/* no checkbox yet because no newsletter */
+.modal-body {
+    font-family: "Jost", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+/* Hero */
 
 .heroImage {
     background-image: url("/images/hero.png");
